@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Data Form</title>
+</head>
+<body>
+    <h1 align = "center"> This is bio data form</h1>
+    <fieldset>
+        <legend>Personal Info</legend>
+        <label for="username">FirstName</label>
+        <input type="text" id="username" placeholder="Enter first name" name="user" required> &nbsp;
+        <label for="lastname">LastName</label>
+        <input type="text" id="lastname" placeholder="Last name" name="user" required>
+        <br>
+        Gender:
+        <label for="male">Male<b>:</b></label>
+        <input type="radio" name="gender" id="male">&nbsp;
+        <label for="female">Femal<b>:</b></label>
+        <input type="radio" name="gender" id="female">&nbsp;
+        <label for="others">Others<b>:</b></label>
+        <input type="radio" name="gender" id="others">
+         <br>
+        <label for="DOB">DateOfBirth</label>
+         <input type="date" id="DOB" >
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="email" id="email">
+        <br>
+        <label for="PhoneNumber">PhoneNumber:</label>
+        <input type="tel" placeholder="1234569870" id="PhoneNumber" maxlength="10">
+        <br>
+        <label for="height">Height:</label>
+        <input type="number" placeholder=" in feet" id=height>
+    
+     </fieldset>
+     <br>
+    <fieldset >
+        <legend>Education</legend>
+        <label for="school">SchoolName</label>
+        <input type="text" placeholder="School Name" id="school">
+        <br>
+        <label for="class">Class</label>
+        <input type="text" placeholder="Class" id="class">
+        <br>
+        Stream:
+        <select Stream="" >
+            <option >CSE</option>
+            <option >MECH</option>
+            <option >CIV</option>
+            <option >ECE</option>
+            <option >EEE</option>
+            <option >CHEM</option>
+            <option >ARCH</option>
+            <option >META</option>
+        </select>
+        <br>
+        <label for="marksheet">Marksheet</label>
+        <input type="file" id="marksheet">
+    </fieldset>
+    <input type="submit">
+</body>
+</html>
