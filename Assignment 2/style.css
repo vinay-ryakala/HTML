@@ -1,0 +1,38 @@
+body{
+    background-color: aqua;
+}
+header{
+    font-size: 150%;
+    text-align:center;
+    margin: 20px;
+}
+div.sticky {
+    position: sticky;
+    top: 0;
+    font-size: 200%;
+    background-color: green;
+    border: 2px solid #4CAF50;
+    border-radius: 15px;
+}
+  p::before{
+      margin: 20px;
+    content:'\1F464';
+  }
+  section::before{
+    content:'\1F464';
+  }
+  section:after{
+    content:'\2706';
+
+  }
+  section:hover{
+      color:rgb(4, 0, 255);
+      font-size: 150%;
+  }
+
+  span.name{
+    font-size:30px;  }
+  span.a{
+      margin: 20px;
+      font-size:small;
+  }
