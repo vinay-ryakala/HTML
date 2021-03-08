@@ -1,0 +1,181 @@
+ *{
+    margin: 0;
+    padding: 0;
+} 
+body{
+    background: hsla(152, 100%, 50%, 1);
+
+background: linear-gradient(0deg, hsla(152, 100%, 50%, 1) 0%, hsla(33, 100%, 50%, 1) 30%, hsla(190, 87%, 37%, 1) 60%, hsla(164, 88%, 50%, 1) 60%, hsla(0, 100%, 69%, 1) 100%);
+
+background: -moz-linear-gradient(0deg, hsla(152, 100%, 50%, 1) 0%, hsla(33, 100%, 50%, 1) 30%, hsla(190, 87%, 37%, 1) 60%, hsla(164, 88%, 50%, 1) 60%, hsla(0, 100%, 69%, 1) 100%);
+
+background: -webkit-linear-gradient(0deg, hsla(152, 100%, 50%, 1) 0%, hsla(33, 100%, 50%, 1) 30%, hsla(190, 87%, 37%, 1) 60%, hsla(164, 88%, 50%, 1) 60%, hsla(0, 100%, 69%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00FF87", endColorstr="#FF8C00", GradientType=1 );
+}
+nav{
+    display: flex;
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    flex-wrap: wrap;
+}
+
+a{
+    padding:7px 10px 7px 10px;
+    text-decoration: none ;
+    color:white;
+    font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+}
+a:last-child{
+    position:absolute;
+    right: 8px;
+}
+nav a:hover {
+    scale: 1.02;
+    background-color: white;
+    color:black;
+    text-shadow: 0px 0px 3px 3px yellowgreen;
+}
+#animation{
+    height: 50vh;
+    width: 80vw;
+    margin: 50px auto;
+    border: 1px solid rgb(221, 210, 210);
+    background-repeat: round;
+    background-size: cover;
+    animation: slide 10s infinite forwards cubic-bezier(.17,.67,1,1.87);
+}
+@keyframes slide{
+    15%{
+        background-image: url(https://images.unsplash.com/photo-1552452380-4137214f33b6?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8NnNNVmpUTFNrZVF8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    }
+    25%{
+        background-image: url(https://images.unsplash.com/photo-1464660439080-b79116909ce7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c3Vuc2hpbmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    }
+    50%{
+        background-image: url(https://images.unsplash.com/photo-1532911557891-d12f6b98dddc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8c3VufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    }
+    75%{
+        background-image: url(https://images.unsplash.com/photo-1582614378336-15327b1f6a0d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8c3VufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    }
+    100%{
+        background-image: url(https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c3Vuc2V0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    }
+}
+.another{
+    height: auto;
+    width: 80vw;
+    margin: 20px auto;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
+article{
+    transition: all .5s;
+   
+}
+article:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 5px rgb(0, 235, 0);
+}
+
+article figure{
+    width: 250px;
+    height: 250px;
+}
+
+article figure img{
+    width: 100%;
+    height: 80%;
+}
+article button{
+    padding: 1px;
+}
+figcaption{
+    text-align: center;
+}
+.about{
+width: auto;
+}
+fieldset{
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: fantasy;
+    color: magenta;
+    border: 2px solid #b108ff;
+}
+.form .inputBx input {
+    width: 100%;
+    background: transparent;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.form .inputBx ::placeholder {
+    color: #fff;
+  }
+  
+  .form .inputBx textarea {
+    width: 100%;
+    background: transparent;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    min-height: 150px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+  }
+  .form .inputBx input[type="submit"] {
+    text-align: center;
+    width: 150px;
+    background: #fff;
+    color: #111;
+    cursor: pointer;
+    font-weight: 400;
+  }
+ @media screen and (max-width:500px){
+     nav{
+         flex-direction: column;
+     }
+    .about .contentBx,
+   .about .imgBx,
+   .about .imgBx2 {
+    width: 100%;
+    padding: 50px;
+    min-height: 400px;
+    text-align: center;
+    }
+}
+
+footer {
+    position: fixed;
+    display: inline-flex;
+    width: 100%;
+    background-color: #777;
+    padding: 5px;
+    color: white;
+    bottom: 0;
+    align-items: center;
+    justify-content: space-between; 
+  }
+  .copy{
+    display:inline-block;
+  }
+  .copy i{
+      font-size: 1.1rem;
+  }
+  .foot{
+      padding-right: 10px;
+      font: 10px cursive;
+      display:inline-block;
+      right: 0;
+      width: fit-content;
+      position: relative;
+      text-align:center;
+  }
